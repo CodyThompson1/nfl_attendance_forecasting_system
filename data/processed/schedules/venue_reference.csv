@@ -1,0 +1,92 @@
+venue_raw,venue_clean,home_team_abbr,home_stadium_venue,weather_match_venue,is_neutral_site,is_international,game_city,game_country
+AT&T Stadium,AT&T Stadium,DAL,AT&T Stadium,AT&T Stadium,False,False,,United States
+Acrisure Stadium,Acrisure Stadium,PIT,Acrisure Stadium,Acrisure Stadium,False,False,,United States
+Heinz Field,Acrisure Stadium,PIT,Acrisure Stadium,Acrisure Stadium,False,False,,United States
+Allegiant Stadium,Allegiant Stadium,KC,Arrowhead Stadium,Allegiant Stadium,True,False,,United States
+Allegiant Stadium,Allegiant Stadium,LV,Allegiant Stadium,Allegiant Stadium,False,False,,United States
+Allianz Arena,Allianz Arena,CAR,Bank of America Stadium,Allianz Arena,True,True,Munich,Germany
+Allianz Arena,Allianz Arena,TB,Raymond James Stadium,Allianz Arena,True,True,Munich,Germany
+Arena Corinthians,Arena Corinthians,PHI,Lincoln Financial Field,Arena Corinthians,True,False,,United States
+Arrowhead Stadium,Arrowhead Stadium,KC,Arrowhead Stadium,Arrowhead Stadium,False,False,,United States
+GEHA Field at Arrowhead Stadium,Arrowhead Stadium,KC,Arrowhead Stadium,Arrowhead Stadium,False,False,,United States
+Bank of America Stadium,Bank of America Stadium,CAR,Bank of America Stadium,Bank of America Stadium,False,False,,United States
+Mercedes-Benz Superdome,Caesars Superdome,NO,Caesars Superdome,Caesars Superdome,False,False,,United States
+Mercedes-Benz Superdome,Caesars Superdome,PHI,Lincoln Financial Field,Caesars Superdome,True,False,,United States
+Deutsche Bank Park,Deutsche Bank Park,KC,Arrowhead Stadium,Deutsche Bank Park,True,True,Frankfurt,Germany
+Deutsche Bank Park,Deutsche Bank Park,NE,Gillette Stadium,Deutsche Bank Park,True,True,Frankfurt,Germany
+Edward Jones Dome,Edward Jones Dome,LAR,SoFi Stadium,Edward Jones Dome,True,False,,United States
+Empower Field at Mile High,Empower Field at Mile High,DEN,Empower Field at Mile High,Empower Field at Mile High,False,False,,United States
+Sports Authority Field at Mile High,Empower Field at Mile High,DEN,Empower Field at Mile High,Empower Field at Mile High,False,False,,United States
+Azteca Stadium,Estadio Azteca,ARI,State Farm Stadium,Estadio Azteca,True,True,Mexico City,Mexico
+Azteca Stadium,Estadio Azteca,LAC,SoFi Stadium,Estadio Azteca,True,True,Mexico City,Mexico
+Azteca Stadium,Estadio Azteca,LV,Allegiant Stadium,Estadio Azteca,True,True,Mexico City,Mexico
+EverBank Field,EverBank Stadium,JAX,EverBank Stadium,EverBank Stadium,False,False,,United States
+Ford Field,Ford Field,BUF,Highmark Stadium,Ford Field,True,False,,United States
+Ford Field,Ford Field,DET,Ford Field,Ford Field,False,False,,United States
+Georgia Dome,Georgia Dome,ATL,Mercedes-Benz Stadium,Georgia Dome,True,False,,United States
+Gillette Stadium,Gillette Stadium,NE,Gillette Stadium,Gillette Stadium,False,False,,United States
+Hard Rock Stadium,Hard Rock Stadium,KC,Arrowhead Stadium,Hard Rock Stadium,True,False,,United States
+Hard Rock Stadium,Hard Rock Stadium,MIA,Hard Rock Stadium,Hard Rock Stadium,False,False,,United States
+Sun Life Stadium,Hard Rock Stadium,MIA,Hard Rock Stadium,Hard Rock Stadium,False,False,,United States
+New Era Field,Highmark Stadium,BUF,Highmark Stadium,Highmark Stadium,False,False,,United States
+Ralph Wilson Stadium,Highmark Stadium,BUF,Highmark Stadium,Highmark Stadium,False,False,,United States
+FirstEnergy Stadium,Huntington Bank Field,CLE,Huntington Bank Field,Huntington Bank Field,False,False,,United States
+Lambeau Field,Lambeau Field,GB,Lambeau Field,Lambeau Field,False,False,,United States
+Levi's Stadium,Levi's Stadium,DEN,Empower Field at Mile High,Levi's Stadium,True,False,,United States
+Levi's Stadium,Levi's Stadium,NE,Gillette Stadium,Levi's Stadium,True,False,,United States
+Levi's Stadium,Levi's Stadium,SF,Levi's Stadium,Levi's Stadium,False,False,,United States
+Lincoln Financial Field,Lincoln Financial Field,PHI,Lincoln Financial Field,Lincoln Financial Field,False,False,,United States
+Los Angeles Memorial Coliseum,Los Angeles Memorial Coliseum,LAR,SoFi Stadium,Los Angeles Memorial Coliseum,True,False,,United States
+Lucas Oil Stadium,Lucas Oil Stadium,IND,Lucas Oil Stadium,Lucas Oil Stadium,False,False,,United States
+CenturyLink Field,Lumen Field,SEA,Lumen Field,Lumen Field,False,False,,United States
+Lumen Field,Lumen Field,SEA,Lumen Field,Lumen Field,False,False,,United States
+M&T Bank Stadium,M&T Bank Stadium,BAL,M&T Bank Stadium,M&T Bank Stadium,False,False,,United States
+Mercedes-Benz Stadium,Mercedes-Benz Stadium,ATL,Mercedes-Benz Stadium,Mercedes-Benz Stadium,False,False,,United States
+Mercedes-Benz Stadium,Mercedes-Benz Stadium,LAR,SoFi Stadium,Mercedes-Benz Stadium,True,False,,United States
+MetLife Stadium,MetLife Stadium,NYG,MetLife Stadium,MetLife Stadium,False,False,,United States
+MetLife Stadium,MetLife Stadium,NYJ,MetLife Stadium,MetLife Stadium,False,False,,United States
+NRG Stadium,NRG Stadium,ATL,Mercedes-Benz Stadium,NRG Stadium,True,False,,United States
+NRG Stadium,NRG Stadium,HOU,NRG Stadium,NRG Stadium,False,False,,United States
+Nissan Stadium,Nissan Stadium,TEN,Nissan Stadium,Nissan Stadium,False,False,,United States
+FedExField,Northwest Stadium,WSH,Northwest Stadium,Northwest Stadium,False,False,,United States
+O.co Coliseum,O.co Coliseum,LV,Allegiant Stadium,O.co Coliseum,True,False,,United States
+Oakland-Alameda County Coliseum,Oakland Coliseum,LV,Allegiant Stadium,Oakland Coliseum,True,False,,United States
+Paul Brown Stadium,Paycor Stadium,CIN,Paycor Stadium,Paycor Stadium,False,False,,United States
+Paycor Stadium,Paycor Stadium,CIN,Paycor Stadium,Paycor Stadium,False,False,,United States
+Qualcomm Stadium,Qualcomm Stadium,LAC,SoFi Stadium,Qualcomm Stadium,True,False,,United States
+Raymond James Stadium,Raymond James Stadium,TB,Raymond James Stadium,Raymond James Stadium,False,False,,United States
+Ring Central Coliseum,Ring Central Coliseum,LV,Allegiant Stadium,Ring Central Coliseum,True,False,,United States
+SoFi Stadium,SoFi Stadium,CIN,Paycor Stadium,SoFi Stadium,True,False,,United States
+SoFi Stadium,SoFi Stadium,LAC,SoFi Stadium,SoFi Stadium,False,False,,United States
+SoFi Stadium,SoFi Stadium,LAR,SoFi Stadium,SoFi Stadium,False,False,,United States
+Soldier Field,Soldier Field,CHI,Soldier Field,Soldier Field,False,False,,United States
+State Farm Stadium,State Farm Stadium,ARI,State Farm Stadium,State Farm Stadium,False,False,,United States
+State Farm Stadium,State Farm Stadium,LAR,SoFi Stadium,State Farm Stadium,True,False,,United States
+State Farm Stadium,State Farm Stadium,PHI,Lincoln Financial Field,State Farm Stadium,True,False,,United States
+State Farm Stadium,State Farm Stadium,SF,Levi's Stadium,State Farm Stadium,True,False,,United States
+University of Phoenix Stadium,State Farm Stadium,ARI,State Farm Stadium,State Farm Stadium,False,False,,United States
+StubHub Center,StubHub Center,LAC,SoFi Stadium,StubHub Center,True,False,,United States
+TCF Bank Stadium,TCF Bank Stadium,MIN,U.S. Bank Stadium,TCF Bank Stadium,True,False,,United States
+TIAA Bank Stadium,TIAA Bank Stadium,JAX,EverBank Stadium,TIAA Bank Stadium,True,False,,United States
+TIAA Bank Stadium,TIAA Bank Stadium,NO,Caesars Superdome,TIAA Bank Stadium,True,False,,United States
+Tottenham Stadium,Tottenham Hotspur Stadium,ATL,Mercedes-Benz Stadium,Tottenham Hotspur Stadium,True,True,London,United Kingdom
+Tottenham Stadium,Tottenham Hotspur Stadium,BUF,Highmark Stadium,Tottenham Hotspur Stadium,True,True,London,United Kingdom
+Tottenham Stadium,Tottenham Hotspur Stadium,CHI,Soldier Field,Tottenham Hotspur Stadium,True,True,London,United Kingdom
+Tottenham Stadium,Tottenham Hotspur Stadium,GB,Lambeau Field,Tottenham Hotspur Stadium,True,True,London,United Kingdom
+Tottenham Stadium,Tottenham Hotspur Stadium,JAX,EverBank Stadium,Tottenham Hotspur Stadium,True,True,London,United Kingdom
+Tottenham Stadium,Tottenham Hotspur Stadium,LV,Allegiant Stadium,Tottenham Hotspur Stadium,True,True,London,United Kingdom
+Tottenham Stadium,Tottenham Hotspur Stadium,MIN,U.S. Bank Stadium,Tottenham Hotspur Stadium,True,True,London,United Kingdom
+Tottenham Stadium,Tottenham Hotspur Stadium,NO,Caesars Superdome,Tottenham Hotspur Stadium,True,True,London,United Kingdom
+Tottenham Stadium,Tottenham Hotspur Stadium,TB,Raymond James Stadium,Tottenham Hotspur Stadium,True,True,London,United Kingdom
+Tottenham Stadium,Tottenham Hotspur Stadium,TEN,Nissan Stadium,Tottenham Hotspur Stadium,True,True,London,United Kingdom
+Twickenham Stadium,Twickenham Stadium,CLE,Huntington Bank Field,Twickenham Stadium,True,False,,United States
+Twickenham Stadium,Twickenham Stadium,LAR,SoFi Stadium,Twickenham Stadium,True,False,,United States
+U.S. Bank Stadium,U.S. Bank Stadium,MIN,U.S. Bank Stadium,U.S. Bank Stadium,False,False,,United States
+U.S. Bank Stadium,U.S. Bank Stadium,NE,Gillette Stadium,U.S. Bank Stadium,True,False,,United States
+Wembley Stadium,Wembley Stadium,CIN,Paycor Stadium,Wembley Stadium,True,True,London,United Kingdom
+Wembley Stadium,Wembley Stadium,JAX,EverBank Stadium,Wembley Stadium,True,True,London,United Kingdom
+Wembley Stadium,Wembley Stadium,KC,Arrowhead Stadium,Wembley Stadium,True,True,London,United Kingdom
+Wembley Stadium,Wembley Stadium,LAC,SoFi Stadium,Wembley Stadium,True,True,London,United Kingdom
+Wembley Stadium,Wembley Stadium,LAR,SoFi Stadium,Wembley Stadium,True,True,London,United Kingdom
+Wembley Stadium,Wembley Stadium,LV,Allegiant Stadium,Wembley Stadium,True,True,London,United Kingdom
+Wembley Stadium,Wembley Stadium,MIA,Hard Rock Stadium,Wembley Stadium,True,True,London,United Kingdom

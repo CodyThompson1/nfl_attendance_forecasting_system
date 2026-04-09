@@ -1,0 +1,4 @@
+model_name,dataset_split,mae,rmse,r2,prediction_interval_method,prediction_interval_z,prediction_interval_half_width,row_count,best_k
+knn_regressor,train,5951.954436867481,8285.16875135668,0.17305216855602934,validation_residual_std,1.96,14140.478060956582,2093,11
+knn_regressor,validation,5398.315824915825,7277.116689965578,-0.13211268111014118,validation_residual_std,1.96,14140.478060956582,270,11
+knn_regressor,test,5737.404897685341,7691.84428871259,-0.1849654030578971,validation_residual_std,1.96,14140.478060956582,271,11

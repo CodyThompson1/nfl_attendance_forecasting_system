@@ -1,0 +1,22 @@
+check_name,passed,detail,metric_value,threshold
+attendance_greater_than_zero,True,All fact_game attendance values are greater than 0.,0.0,0
+no_duplicate_game_ids_fact_game,True,No duplicate game_id values found in fact_game.,0.0,0
+one_row_per_game_fact_game,True,fact_game has exactly one row per game.,0.0,0
+weather_date_matches_game_date_for_applicable_games,False,Missing required column: game_date in fact_game,,0 rows with mismatched game_date and weather_date
+missingness_under_5pct_game_id,True,game_id missingness is 0.0000%.,0.0,< 5.0%
+missingness_under_5pct_season,True,season missingness is 0.0000%.,0.0,< 5.0%
+missingness_under_5pct_attendance,True,attendance missingness is 4.5306%.,4.5306,< 5.0%
+missingness_under_5pct_home_team_id,False,Missing required core model field: home_team_id,,< 5.0%
+missingness_under_5pct_away_team_id,False,Missing required core model field: away_team_id,,< 5.0%
+missingness_under_5pct_venue_id,False,Missing required core model field: venue_id,,< 5.0%
+missingness_under_5pct_date_id,False,Missing required core model field: date_id,,< 5.0%
+missingness_under_5pct_home_win_pct_last_5,False,Missing required core model field: home_win_pct_last_5,,< 5.0%
+missingness_under_5pct_away_win_pct_last_5,False,Missing required core model field: away_win_pct_last_5,,< 5.0%
+missingness_under_5pct_weekend_flag,True,weekend_flag missingness is 0.0000%.,0.0,< 5.0%
+missingness_under_5pct_holiday_adjacent_flag,True,holiday_adjacent_flag missingness is 0.0000%.,0.0,< 5.0%
+valid_join_home_team_id_to_team_id,True,All home_team_id values in fact_game successfully join to team_id.,0.0,0
+valid_join_away_team_id_to_team_id,True,All away_team_id values in fact_game successfully join to team_id.,0.0,0
+valid_join_venue_id_to_venue_id,True,All venue_id values in fact_game successfully join to venue_id.,0.0,0
+valid_join_date_id_to_date_id,True,All date_id values in fact_game successfully join to date_id.,0.0,0
+row_count_consistency_fact_game_vs_ml_features_excluding_2020,True,fact_game and ml_features_attendance have consistent row counts after excluding 2020.,0.0,0
+no_duplicate_rows_fact_team_form,True,"No duplicate (game_id, team_id) rows found in fact_team_form.",0.0,"0 duplicate (game_id, team_id) rows"

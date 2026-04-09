@@ -1,0 +1,33 @@
+team_id,team_abbr,team_name,market,league
+1,ARI,Arizona Cardinals,Arizona,NFL
+2,ATL,Atlanta Falcons,Atlanta,NFL
+3,BAL,Baltimore Ravens,Baltimore,NFL
+4,BUF,Buffalo Bills,Buffalo,NFL
+5,CAR,Carolina Panthers,Carolina,NFL
+6,CHI,Chicago Bears,Chicago,NFL
+7,CIN,Cincinnati Bengals,Cincinnati,NFL
+8,CLE,Cleveland Browns,Cleveland,NFL
+9,DAL,Dallas Cowboys,Dallas,NFL
+10,DEN,Denver Broncos,Denver,NFL
+11,DET,Detroit Lions,Detroit,NFL
+12,GB,Green Bay Packers,Green Bay,NFL
+13,HOU,Houston Texans,Houston,NFL
+14,IND,Indianapolis Colts,Indianapolis,NFL
+15,JAX,Jacksonville Jaguars,Jacksonville,NFL
+16,KC,Kansas City Chiefs,Kansas City,NFL
+17,LAC,Los Angeles Chargers,Los Angeles,NFL
+18,LAR,Los Angeles Rams,Los Angeles,NFL
+19,LV,Las Vegas Raiders,Las Vegas,NFL
+20,MIA,Miami Dolphins,Miami,NFL
+21,MIN,Minnesota Vikings,Minnesota,NFL
+22,NE,New England Patriots,New England,NFL
+23,NO,New Orleans Saints,New Orleans,NFL
+24,NYG,New York Giants,New York,NFL
+25,NYJ,New York Jets,New York,NFL
+26,PHI,Philadelphia Eagles,Philadelphia,NFL
+27,PIT,Pittsburgh Steelers,Pittsburgh,NFL
+28,SEA,Seattle Seahawks,Seattle,NFL
+29,SF,San Francisco 49ers,San Francisco,NFL
+30,TB,Tampa Bay Buccaneers,Tampa Bay,NFL
+31,TEN,Tennessee Titans,Tennessee,NFL
+32,WSH,Washington Commanders,Washington,NFL
