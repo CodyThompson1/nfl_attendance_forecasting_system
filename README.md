@@ -1,154 +1,130 @@
 # NFL Attendance Forecasting System
 
-An end-to-end data analytics and machine learning system for predicting NFL game attendance. Built as part of the Advanced Applied Modeling course, this project covers the full data pipeline — from raw data extraction through to a live interactive dashboard.
+An end-to-end machine learning system for predicting NFL home game attendance using weather conditions, team performance, venue data, and scheduling context. Built as a semester-long project for **Advanced Applied Modeling (BMKT 673)**.
 
 ---
 
-## Project Overview
+## Overview
 
-This system forecasts NFL game attendance using historical game data, team performance metrics, venue information, and weather conditions. The initial scope covers **8 teams across two divisions** to support rapid development and validation, with an architecture designed to scale to the full league.
+The system answers one question: *how many fans will attend an upcoming NFL home game, and how confident are we in that estimate?*
 
-**Divisions covered:**
-- AFC West: Denver Broncos, Los Angeles Chargers, Kansas City Chiefs, Las Vegas Raiders
-- NFC South: Carolina Panthers, Tampa Bay Buccaneers, Atlanta Falcons, New Orleans Saints
+It covers the full analytics lifecycle — raw data extraction, a PostgreSQL data warehouse, feature engineering, three trained ML models, and a live interactive dashboard.
 
 ---
 
-## What Was Built
+## Results
 
-### Data Pipeline
-- Extracted NFL game schedules and outcomes via the `nflverse` / `nflreadpy` ecosystem
-- Scraped attendance figures from Sports Reference using `BeautifulSoup`
-- Pulled historical weather data for each game using the `Meteostat` API
-- Matched attendance records to game schedule data with fuzzy/exact game matching
-- Applied data quality checks throughout the pipeline (`run_data_quality_checks.py`)
-
-### Database
-- Designed and implemented a relational SQLite database with a star schema
-- Tables: `dim_team`, `dim_venue`, `dim_date`, `fact_game`, `fact_team_form`, `fact_weather`
-- Schema supports easy expansion to additional teams, seasons, or data sources
-
-### Feature Engineering
-- Built dimensional tables for teams, venues, and dates
-- Engineered team form metrics (recent win rate, scoring trends)
-- Combined game, weather, and team features into an ML-ready feature set (`build_ml_features_attendance.py`)
-
-### Machine Learning Models
-Three regression models were trained and evaluated for attendance prediction:
-
-| Model | Script |
+| Metric | Value |
 |---|---|
-| Linear Regression | `train_linear_regression.py` |
-| K-Nearest Neighbors Regressor | `train_knn_regressor.py` |
-| Neural Network (MLP) | `train_neural_network.py` |
-
-Models were trained on the engineered feature set and evaluated using standard regression metrics (RMSE, MAE, R²).
-
-### Interactive Dashboard
-- Built with **Streamlit** and **Plotly/Altair** for interactive visualisation
-- Displays attendance trends, model predictions vs actuals, team breakdowns, and weather impact
-- Run locally with: `streamlit run scripts/dashboard.py`
-
----
-
-## Repository Structure
-
-```
-nfl_attendance_forecasting_system/
-│
-├── data/
-│   ├── raw/                  # Raw extracted datasets (schedules, attendance, weather)
-│   ├── processed/            # Cleaned and merged datasets ready for modeling
-│   └── modeling/             # Final ML-ready feature sets
-│
-├── db/                       # SQLite database and schema documentation
-│
-├── docs/                     # Project documentation and deliverables
-│
-├── scripts/                  # All Python scripts
-│   ├── extract_nfl_schedules.py
-│   ├── extract_sportsref_attendance.py
-│   ├── extract_weather_meteostat.py
-│   ├── match_game_attendance.py
-│   ├── clean_attendance.py
-│   ├── clean_schedules.py
-│   ├── run_data_quality_checks.py
-│   ├── build_dim_date.py
-│   ├── build_dim_team.py
-│   ├── build_dim_venue.py
-│   ├── build_fact_game.py
-│   ├── build_fact_team_form.py
-│   ├── build_fact_weather.py
-│   ├── build_ml_features_attendance.py
-│   ├── train_linear_regression.py
-│   ├── train_knn_regressor.py
-│   ├── train_neural_network.py
-│   └── dashboard.py
-│
-├── .gitignore
-├── requirements.txt
-└── README.md
-```
+| Seasons covered | 2015–2025 (excl. 2020) |
+| Total games | 3,028 |
+| Best model | Linear Regression |
+| Test MAE (271 games, 2025) | 5,290 fans |
+| Avg % error per game | 7.5% |
+| 95% CI capture rate | 92% |
 
 ---
 
 ## Tech Stack
 
-| Category | Tools / Libraries |
+| Category | Tools |
 |---|---|
-| Language | Python 3 |
-| Data Extraction | `nflreadpy`, `requests`, `BeautifulSoup`, `lxml` |
-| Weather Data | `Meteostat` |
-| Data Processing | `pandas`, `numpy`, `polars` |
-| Database | SQLite via `SQLAlchemy` |
-| Machine Learning | `scikit-learn` (LinearRegression, KNeighborsRegressor, MLPRegressor), `scipy` |
-| Visualisation | `Streamlit`, `Plotly`, `Altair` |
-| Utilities | `python-dotenv`, `GitPython`, `tqdm` |
-
----
-
-## Getting Started
-
-### Prerequisites
-- Python 3.10+
-- Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-### Running the Dashboard
-```bash
-streamlit run scripts/dashboard.py
-```
-
-### Running the Full Pipeline
-Scripts should be run in the following order:
-
-1. **Extract:** `extract_nfl_schedules.py` → `extract_sportsref_attendance.py` → `extract_weather_meteostat.py`
-2. **Clean & Match:** `clean_schedules.py` → `clean_attendance.py` → `match_game_attendance.py`
-3. **Quality Check:** `run_data_quality_checks.py`
-4. **Build DB Dimensions:** `build_dim_date.py` → `build_dim_team.py` → `build_dim_venue.py`
-5. **Build Facts:** `build_fact_game.py` → `build_fact_team_form.py` → `build_fact_weather.py`
-6. **Feature Engineering:** `build_ml_features_attendance.py`
-7. **Train Models:** `train_linear_regression.py` / `train_knn_regressor.py` / `train_neural_network.py`
-8. **Dashboard:** `dashboard.py`
+| Language | Python 3.10+ |
+| Data Extraction | nflreadpy, requests, BeautifulSoup |
+| Weather | Meteostat API |
+| Data Processing | pandas, numpy |
+| Database | PostgreSQL 18, SQLAlchemy, psycopg2 |
+| Machine Learning | scikit-learn (LinearRegression, KNeighborsRegressor, MLPRegressor) |
+| Dashboard | Streamlit, Plotly |
 
 ---
 
 ## Data Sources
 
-- **NFL Schedules & Game Data:** [nflverse](https://github.com/nflverse) ecosystem via `nflreadpy`
-- **Attendance Data:** [Pro Football Reference](https://www.pro-football-reference.com/) (scraped)
-- **Weather Data:** [Meteostat](https://meteostat.net/) historical weather API
+- **Game Schedules:** nflverse ecosystem via nflreadpy
+- **Attendance:** Pro Football Reference (scraped via BeautifulSoup)
+- **Weather:** Meteostat historical weather API matched to venue and kickoff time
+
+---
+
+## Database
+
+PostgreSQL star schema with 8 tables. `fact_game` is the central table with foreign keys to `dim_team`, `dim_venue`, and `dim_date`. `fact_weather` and `fact_team_form` extend each game with weather and team performance data. `ml_features` holds the final model-ready feature set and `model_predictions` stores all predictions written back from training.
+
+Six data quality checks are enforced on every pipeline run including attendance validity, no duplicate game IDs, foreign key integrity, and core feature missingness under 5%.
+
+---
+
+## Models
+
+Strict time-based splits were used — no random shuffling — to prevent data leakage:
+
+- **Training:** 2015–2023 (excl. 2020)
+- **Validation:** 2024
+- **Test:** 2025
+
+| Model | Val MAE | Test MAE |
+|---|---|---|
+| Linear Regression | 5,021 | 5,290 |
+| KNN (k=11) | 5,398 | 5,737 |
+| Neural Network (16,8) | 5,348 | 5,505 |
+
+Linear Regression was selected based on lowest validation MAE and best generalization to the 2025 test set. All predictions are written back to PostgreSQL.
+
+---
+
+## Dashboard
+
+Three-page Streamlit dashboard connected directly to PostgreSQL:
+
+- **Executive Forecast** — game-by-game predictions, confidence intervals, weather risk flags, model comparison
+- **Attendance Drivers** — weather and win % scatter plots, day-of-week heatmap, game context breakdowns
+- **Scenario Simulator** — interactive sliders and toggles that generate live attendance predictions using the trained model
+
+---
+
+## Setup
+
+**Prerequisites:** Python 3.10+, PostgreSQL with pgAdmin 4
+
+```bash
+pip install -r requirements.txt
+```
+
+Set up the database by running `setup_postgres_db.sql` in the pgAdmin Query Tool, updating the file paths inside to match your local data directory.
+
+Update the credentials in `scripts/dashboard.py`:
+
+```python
+DB_HOST     = "localhost"
+DB_PORT     = 5432
+DB_NAME     = "nfl_attendance"
+DB_USER     = "postgres"
+DB_PASSWORD = "your_password_here"
+```
+
+Run the dashboard:
+
+```bash
+streamlit run scripts/dashboard.py
+```
+
+---
+
+## Pipeline Order
+
+1. `extract_nfl_schedules.py`
+2. `extract_sportsref_attendance.py`
+3. `extract_weather_meteostat.py`
+4. `clean_schedules.py` / `clean_attendance.py` / `match_game_attendance.py`
+5. `run_data_quality_checks.py`
+6. `build_dim_*.py` / `build_fact_*.py`
+7. `build_ml_features_attendance.py`
+8. `train_linear_regression.py` / `train_knn_regressor.py` / `train_neural_network.py`
+9. `dashboard.py`
 
 ---
 
 ## Course Context
 
-Built for **Advanced Applied Modeling** as a semester-long project demonstrating:
-- End-to-end data engineering and pipeline design
-- Relational database schema design (star schema)
-- Feature engineering for ML
-- Comparative model evaluation
-- Interactive dashboard delivery
+Built for **Advanced Applied Modeling (BMKT 673)** demonstrating end-to-end data engineering, relational database design, feature engineering for ML, comparative model evaluation with time-based validation, and interactive dashboard delivery.
